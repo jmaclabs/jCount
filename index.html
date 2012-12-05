@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title></title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="/jcount.js"></script>
+</head>
+<body>
+
+<script type="text/javascript"><!--
+    jQuery(function($) {
+        $('.timer').countTo({
+            from: 50,
+            to: 2500,
+            speed: 1000,
+            refreshInterval: 50,
+            onComplete: function(value) {
+                console.debug(this);
+            }
+        });
+    });
+//--></script>
+
+<span class="timer"></span>
+</body>
+</html>
